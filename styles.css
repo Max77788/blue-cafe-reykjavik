@@ -545,92 +545,120 @@ ul {
     font-weight: 300;
 }
 
-/* ========== Offerings Section ========== */
-.offerings {
+/* ========== Menu Section ========== */
+.menu-section {
     padding: 7rem 0;
     background: var(--warm-white);
 }
 
-.offerings-grid {
+.menu-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.75rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 900px;
+    margin: 3rem auto 0;
 }
 
-.offering-card {
+.menu-column {
     background: var(--surface);
     padding: 2.5rem 2rem;
     border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
     border: 1px solid var(--border);
     transition: var(--transition);
-    position: relative;
-    overflow: hidden;
 }
 
-.offering-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 0;
-    background: var(--blue-50);
-    transition: height var(--transition-slow);
-    z-index: 0;
-}
-
-.offering-card:hover::before {
-    height: 100%;
-}
-
-.offering-card:hover {
-    transform: translateY(-4px);
+.menu-column:hover {
     box-shadow: var(--shadow-lg);
     border-color: var(--blue-200);
 }
 
-.offering-icon {
-    position: relative;
-    z-index: 1;
-    width: 52px;
-    height: 52px;
+.menu-category {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--blue-800);
+    margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: var(--blue-50);
-    border-radius: var(--radius-md);
-    color: var(--blue-600);
-    margin-bottom: 1.5rem;
+    gap: 0.6rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--blue-100);
+}
+
+.menu-cat-icon {
+    width: 22px;
+    height: 22px;
+    color: var(--blue-500);
+    flex-shrink: 0;
+}
+
+.menu-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.menu-item {
+    display: flex;
+    align-items: baseline;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--cream-dark);
     transition: var(--transition);
 }
 
-.offering-card:hover .offering-icon {
-    background: var(--blue-600);
-    color: #fff;
-    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+.menu-item:last-child {
+    border-bottom: none;
 }
 
-.offering-icon svg {
-    width: 24px;
-    height: 24px;
+.menu-item:hover {
+    padding-left: 0.5rem;
 }
 
-.offering-card h3 {
-    position: relative;
-    z-index: 1;
-    font-family: var(--font-heading);
-    font-size: 1.2rem;
+.menu-item:hover .item-name {
+    color: var(--blue-600);
+}
+
+.menu-item:hover .item-price {
+    color: var(--blue-700);
     font-weight: 600;
-    margin-bottom: 0.75rem;
-    color: var(--text-primary);
 }
 
-.offering-card p {
-    position: relative;
-    z-index: 1;
+.item-name {
     font-size: 0.95rem;
-    color: var(--text-secondary);
-    line-height: 1.7;
+    color: var(--text-primary);
+    font-weight: 500;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.item-dots {
+    flex: 1;
+    border-bottom: 2px dotted var(--border);
+    margin: 0 0.6rem;
+    min-width: 1rem;
+    align-self: flex-end;
+    margin-bottom: 0.25rem;
+}
+
+.item-price {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--blue-700);
+    white-space: nowrap;
+    transition: var(--transition);
+}
+
+.menu-footer {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.menu-footer p {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 0.95rem;
 }
 
 /* ========== CTA Banner ========== */
@@ -996,8 +1024,8 @@ ul {
 
 /* ========== Responsive Design ========== */
 @media (max-width: 1024px) {
-    .offerings-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .menu-grid {
+        gap: 2rem;
     }
 
     .testimonials-grid {
@@ -1051,8 +1079,9 @@ ul {
         width: 45%;
     }
 
-    .offerings-grid {
+    .menu-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .gallery-grid {

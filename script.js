@@ -33,7 +33,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
 // ========== Scroll Reveal Animations ==========
 const revealElements = document.querySelectorAll(
-    '.offering-card, .testimonial-card, .gallery-item, .story-content, .story-images, .contact-info, .contact-images, .section-header'
+    '.menu-item, .testimonial-card, .gallery-item, .story-content, .story-images, .contact-info, .contact-images, .section-header'
 );
 
 revealElements.forEach(el => el.classList.add('reveal'));
