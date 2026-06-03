@@ -551,12 +551,67 @@ ul {
     background: var(--warm-white);
 }
 
+/* Menu Tabs */
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.menu-tab {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.8rem 2.5rem;
+    border-radius: 100px;
+    border: 1.5px solid var(--border);
+    background: var(--surface);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.menu-tab:hover {
+    border-color: var(--blue-300);
+    color: var(--blue-600);
+}
+
+.menu-tab.active {
+    background: var(--blue-600);
+    color: #fff;
+    border-color: var(--blue-600);
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.25);
+}
+
+/* Menu Tab Content */
+.menu-tab-content {
+    display: none;
+}
+
+.menu-tab-content.active {
+    display: block;
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 .menu-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     max-width: 900px;
-    margin: 3rem auto 0;
+    margin: 0 auto;
+}
+
+.menu-grid-food {
+    max-width: 700px;
+    grid-template-columns: 1fr;
 }
 
 .menu-column {
@@ -566,6 +621,10 @@ ul {
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border);
     transition: var(--transition);
+}
+
+.menu-column-full {
+    width: 100%;
 }
 
 .menu-column:hover {
@@ -600,15 +659,26 @@ ul {
     gap: 0.1rem;
 }
 
+.menu-items-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5rem;
+}
+
 .menu-item {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
     padding: 0.7rem 0;
     border-bottom: 1px solid var(--cream-dark);
     transition: var(--transition);
 }
 
 .menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-items-two-col .menu-item:nth-last-child(-n+2):nth-child(odd) {
     border-bottom: none;
 }
 
@@ -623,6 +693,17 @@ ul {
 .menu-item:hover .item-price {
     color: var(--blue-700);
     font-weight: 600;
+}
+
+.item-desc {
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    font-style: italic;
+    display: block;
+    width: 100%;
+    margin-top: 0.1rem;
+    line-height: 1.4;
 }
 
 .item-name {

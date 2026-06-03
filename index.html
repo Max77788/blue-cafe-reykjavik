@@ -108,101 +108,180 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Our Menu</span>
-                <h2 class="section-title">Blue Café</h2>
+                <h2 class="section-title">Blue Cafe</h2>
                 <p class="section-subtitle">Home of good coffee & comfort food</p>
             </div>
 
-            <div class="menu-grid">
-                <!-- Coffee Column -->
-                <div class="menu-column">
-                    <h3 class="menu-category">
-                        <svg viewBox="0 0 24 24" fill="none" class="menu-cat-icon"><path d="M18 8a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V8ZM8 12h8M8 8h2M14 8h2M8 16h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                        Coffee
-                    </h3>
-                    <ul class="menu-items">
-                        <li class="menu-item">
-                            <span class="item-name">Single Espresso</span>
-                            <span class="item-dots"></span>
-                            <span class="item-price">490 ISK</span>
-                        </li>
-                        <li class="menu-item">
-                            <span class="item-name">Double Espresso</span>
-                            <span class="item-dots"></span>
-                            <span class="item-price">690 ISK</span>
-                        </li>
-                        <li class="menu-item">
-                            <span class="item-name">Americano</span>
-                            <span class="item-dots"></span>
-                            <span class="item-price">700 ISK</span>
-                        </li>
-                        <li class="menu-item">
-                            <span class="item-name">Cappuccino</span>
-                            <span class="item-dots"></span>
-                            <span class="item-price">700 ISK</span>
-                        </li>
-                        <li class="menu-item">
-                            <span class="item-name">Oat / Soy Cappuccino</span>
-                            <span class="item-dots"></span>
-                            <span class="item-price">750 ISK</span>
-                        </li>
-                        <li class="menu-item">
-                            <span class="item-name">Flat White</span>
-                            <span class="item-dots"></span>
-                            <span class="item-price">750 ISK</span>
-                        </li>
-                        <li class="menu-item">
-                            <span class="item-name">Hot Chocolate</span>
-                            <span class="item-dots"></span>
-                            <span class="item-price">800 ISK</span>
-                        </li>
-                        <li class="menu-item">
-                            <span class="item-name">Mocha</span>
-                            <span class="item-dots"></span>
-                            <span class="item-price">900 ISK</span>
-                        </li>
-                    </ul>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="drinks">Drinks</button>
+                <button class="menu-tab" data-tab="food">Food</button>
+            </div>
+
+            <!-- Drinks Tab -->
+            <div class="menu-tab-content active" id="drinks">
+                <div class="menu-grid menu-grid-drinks">
+                    <!-- Coffee Column -->
+                    <div class="menu-column">
+                        <h3 class="menu-category">
+                            <svg viewBox="0 0 24 24" fill="none" class="menu-cat-icon"><path d="M18 8a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V8ZM8 12h8M8 8h2M14 8h2M8 16h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            Coffee
+                        </h3>
+                        <ul class="menu-items">
+                            <li class="menu-item">
+                                <span class="item-name">Single Espresso</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">490 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Double Espresso</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">690 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Americano</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">700 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Cappuccino</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">700 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Oat / Soy Cappuccino</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">750 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Flat White</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">750 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Hot Chocolate</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">800 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Mocha</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">900 ISK</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tea & Desserts Column -->
+                    <div class="menu-column">
+                        <h3 class="menu-category">
+                            <svg viewBox="0 0 24 24" fill="none" class="menu-cat-icon"><path d="M4 8h14a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H7a3 3 0 0 1-3-3V5h18M4 14v3a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            Tea
+                        </h3>
+                        <ul class="menu-items">
+                            <li class="menu-item">
+                                <span class="item-name">Tea</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">600 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Winter Tea (spiced)</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">900 ISK</span>
+                            </li>
+                        </ul>
+
+                        <h3 class="menu-category" style="margin-top: 2.5rem;">
+                            <svg viewBox="0 0 24 24" fill="none" class="menu-cat-icon"><path d="M12 3a4 4 0 0 1 4 4H8a4 4 0 0 1 4-4ZM5 9h14l-1.5 10.5A2 2 0 0 1 15.5 21h-7a2 2 0 0 1-2-1.5L5 9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            Desserts
+                        </h3>
+                        <ul class="menu-items">
+                            <li class="menu-item">
+                                <span class="item-name">Cake of choice</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">1,500 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Brownie with Ice Cream &amp; Cream</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">1,790 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Apple Pie with Ice Cream &amp; Cream</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">1,790 ISK</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
 
-                <!-- Tea Column -->
-                <div class="menu-column">
-                    <h3 class="menu-category">
-                        <svg viewBox="0 0 24 24" fill="none" class="menu-cat-icon"><path d="M4 8h14a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H7a3 3 0 0 1-3-3V5h18M4 14v3a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                        Tea
-                    </h3>
-                    <ul class="menu-items">
-                        <li class="menu-item">
-                            <span class="item-name">Tea</span>
-                            <span class="item-dots"></span>
-                            <span class="item-price">600 ISK</span>
-                        </li>
-                        <li class="menu-item">
-                            <span class="item-name">Winter Tea (spiced)</span>
-                            <span class="item-dots"></span>
-                            <span class="item-price">900 ISK</span>
-                        </li>
-                    </ul>
-
-                    <h3 class="menu-category" style="margin-top: 2.5rem;">
-                        <svg viewBox="0 0 24 24" fill="none" class="menu-cat-icon"><path d="M12 3a4 4 0 0 1 4 4H8a4 4 0 0 1 4-4ZM5 9h14l-1.5 10.5A2 2 0 0 1 15.5 21h-7a2 2 0 0 1-2-1.5L5 9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                        Desserts
-                    </h3>
-                    <ul class="menu-items">
-                        <li class="menu-item">
-                            <span class="item-name">Cake of choice</span>
-                            <span class="item-dots"></span>
-                            <span class="item-price">1,500 ISK</span>
-                        </li>
-                        <li class="menu-item">
-                            <span class="item-name">Brownie with Ice Cream &amp; Cream</span>
-                            <span class="item-dots"></span>
-                            <span class="item-price">1,790 ISK</span>
-                        </li>
-                        <li class="menu-item">
-                            <span class="item-name">Apple Pie with Ice Cream &amp; Cream</span>
-                            <span class="item-dots"></span>
-                            <span class="item-price">1,790 ISK</span>
-                        </li>
-                    </ul>
+            <!-- Food Tab -->
+            <div class="menu-tab-content" id="food">
+                <div class="menu-grid menu-grid-food">
+                    <div class="menu-column menu-column-full">
+                        <h3 class="menu-category">
+                            <svg viewBox="0 0 24 24" fill="none" class="menu-cat-icon"><path d="M6 6h12M6 10h12M6 14h8M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            From Our Kitchen
+                        </h3>
+                        <ul class="menu-items menu-items-two-col">
+                            <li class="menu-item">
+                                <span class="item-name">Soup of the Day</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">2,500 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Lunch of the Day</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">2,700 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Soup &amp; Lunch of the Day Offer</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">4,490 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Homemade Pierogi</span>
+                                <span class="item-desc">(Polish Dumplings)</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">2,990 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Babka Ziemniaczana</span>
+                                <span class="item-desc">(Traditional Polish Potato Bake)</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">2,500 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Caesar Salad with Salmon / Chicken</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">2,990 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Greek Salad</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">2,890 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Bruschetta</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">2,290 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Crostini</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">2,490 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Ham &amp; Cheese Toast</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">1,590 ISK</span>
+                            </li>
+                            <li class="menu-item">
+                                <span class="item-name">Chicken Wrap</span>
+                                <span class="item-dots"></span>
+                                <span class="item-price">2,500 ISK</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -268,7 +347,7 @@
                     <div class="testimonial-author">
                         <div class="author-avatar">KO</div>
                         <div>
-                            <span class="author-name">Katrín Ólafsdóttir</span>
+                            <span class="author-name">Katrin Olafsdottir</span>
                             <span class="author-role">Local Guide</span>
                         </div>
                     </div>
@@ -279,7 +358,7 @@
                     <div class="testimonial-author">
                         <div class="author-avatar">BE</div>
                         <div>
-                            <span class="author-name">Björn Einarsson</span>
+                            <span class="author-name">Bjorn Einarsson</span>
                             <span class="author-role">Regular Customer</span>
                         </div>
                     </div>
@@ -290,7 +369,7 @@
                     <div class="testimonial-author">
                         <div class="author-avatar">AG</div>
                         <div>
-                            <span class="author-name">Anna Guðmundsdóttir</span>
+                            <span class="author-name">Anna Gudmundsdottir</span>
                             <span class="author-role">Food Blogger</span>
                         </div>
                     </div>
@@ -315,7 +394,7 @@
                             </div>
                             <div>
                                 <span class="contact-label">Address</span>
-                                <span class="contact-value">Mýrargata 26, 101 Reykjavik, Iceland</span>
+                                <span class="contact-value">Myrargata 26, 101 Reykjavik, Iceland</span>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -324,7 +403,7 @@
                             </div>
                             <div>
                                 <span class="contact-label">Hours</span>
-                                <span class="contact-value">Monday – Sunday: 10:00 – 18:00</span>
+                                <span class="contact-value">Monday - Sunday: 10:00 - 18:00</span>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -360,13 +439,13 @@
                         <span>Blue Cafe</span>
                     </a>
                     <p class="footer-tagline">Everything is handmade!</p>
-                    <p class="footer-message">We can't wait to see you here! 💙</p>
+                    <p class="footer-message">We can't wait to see you here! &#x1F499;</p>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p class="copyright">&copy; 2025 – 2026 Blue Cafe Reykjavik. All rights reserved.</p>
+                <p class="copyright">&copy; 2025 - 2026 Blue Cafe Reykjavik. All rights reserved.</p>
             </div>
         </div>
     </footer>
