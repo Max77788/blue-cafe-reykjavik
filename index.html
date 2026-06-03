@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Cafe Reykjavik — Experience the heart of Reykjavik</title>
+    <meta name="description" content="Located in the heart of Reykjavik, Blue Cafe offers the best quality coffee, homemade food, and a cozy atmosphere. Visit us at Mýrargata 26.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="images/logo.png" alt="Blue Cafe" class="logo-img">
+                <span class="logo-text">Blue Cafe</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Est. 2025</span>
+            <h1 class="hero-title">Experience the<br>heart of <em>Reykjavik</em></h1>
+            <p class="hero-subtitle">Where the best quality coffee meets homemade food —<br>unique flavors in a cozy atmosphere, blending tradition with innovation.</p>
+            <div class="hero-actions">
+                <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+                <a href="#contact" class="btn btn-outline">Find Us</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="hero-image-wrapper">
+            <img src="images/hero.jpg" alt="Cozy cafe interior" class="hero-image">
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story" id="story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-images">
+                    <div class="story-image-main">
+                        <img src="images/story-1.jpg" alt="Coffee being prepared">
+                    </div>
+                    <div class="story-image-secondary">
+                        <img src="images/story-2.jpg" alt="Coffee art">
+                    </div>
+                </div>
+                <div class="story-content">
+                    <span class="section-tag">Our Story</span>
+                    <h2 class="section-title">Crafted with passion,<br>served with love</h2>
+                    <p class="section-text">Blue Cafe was born from a passion for exceptional coffee and a desire to share the warmth of homemade food. Every dish we serve and every cup we brew is made with the finest ingredients and an unwavering commitment to quality.</p>
+                    <p class="section-text">Nestled in the heart of Reykjavik, we've created a space where locals and travelers alike can find comfort, connection, and the simple pleasure of a perfect brew.</p>
+                    <div class="story-stats">
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Local Ingredients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Daily</span>
+                            <span class="stat-label">Fresh Pastries</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Cozy</span>
+                            <span class="stat-label">Atmosphere</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Promise -->
+    <section class="promise">
+        <div class="container">
+            <div class="promise-content">
+                <span class="section-tag light">Our Promise</span>
+                <h2 class="promise-title">An unforgettable experience,<br>every single visit</h2>
+                <p class="promise-text">From the moment you walk through our doors, you're greeted with genuine warmth. We're committed to exceeding your expectations — with every cup of coffee, every bite of food, and every moment spent in our space. This isn't just a cafe; it's a home away from home.</p>
+            </div>
+        </div>
+        <div class="promise-background">
+            <img src="images/hero.jpg" alt="Cafe atmosphere">
+        </div>
+        <div class="promise-overlay"></div>
+    </section>
+
+    <!-- Offerings Section -->
+    <section class="offerings" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Explore our offerings</h2>
+                <p class="section-subtitle">Everything we do is guided by a love for quality and a desire to bring people together.</p>
+            </div>
+            <div class="offerings-grid">
+                <div class="offering-card">
+                    <div class="offering-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M18 8a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V8ZM8 12h8M8 8h2M14 8h2M8 16h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Signature Coffee Blends</h3>
+                    <p>Carefully selected and expertly roasted coffee beans, sourced from the world's finest growing regions and brewed to perfection.</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a4 4 0 0 1 4 4H8a4 4 0 0 1 4-4ZM5 9h14l-1.5 10.5A2 2 0 0 1 15.5 21h-7a2 2 0 0 1-2-1.5L5 9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Homemade Pastries & Desserts</h3>
+                    <p>Freshly baked every morning using the finest local ingredients — from buttery croissants to decadent Icelandic-inspired cakes and treats.</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M6 6h12M6 10h12M6 14h8M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Savory Food Options</h3>
+                    <p>Hearty sandwiches, warming soups, and seasonal savory dishes crafted with the same care we put into every cup of coffee.</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M3 12h18M3 6h18M3 18h18M8 3v18M16 3v18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Cozy Atmosphere</h3>
+                    <p>A welcoming and comfortable space designed for quiet moments alone, lively catch-ups with friends, or simply watching the world go by.</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Local Ingredients</h3>
+                    <p>We proudly prioritize locally sourced ingredients, supporting Icelandic farmers and producers while ensuring the freshest flavors in every dish.</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM23 21v-2a4 4 0 0 0-3-3.87M15 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Friendly Service</h3>
+                    <p>Our dedicated team is here to make every visit special — with warm smiles, personal recommendations, and exceptional hospitality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="cta-overlay"></div>
+        <img src="images/banner.jpg" alt="Coffee banner" class="cta-image">
+        <div class="cta-content">
+            <h2 class="cta-title">The taste of <em>Iceland</em> in every bite</h2>
+            <p class="cta-text">Come experience why Blue Cafe is the best place for coffee and homemade food in Reykjavik. We can't wait to welcome you.</p>
+            <a href="#contact" class="btn btn-primary">Visit Us Today</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Gallery</span>
+                <h2 class="section-title">Moments at Blue Cafe</h2>
+                <p class="section-subtitle">A glimpse into our world — the coffee, the food, and the people who make it special.</p>
+            </div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item tall">
+                <img src="images/story-1.jpg" alt="Coffee preparation">
+            </div>
+            <div class="gallery-item">
+                <img src="images/story-2.jpg" alt="Cafe detail">
+            </div>
+            <div class="gallery-item wide">
+                <img src="images/banner.jpg" alt="Coffee spread">
+            </div>
+            <div class="gallery-item">
+                <img src="images/footer.jpg" alt="Cafe interior">
+            </div>
+            <div class="gallery-item tall">
+                <img src="images/contact-1.png" alt="Blue Cafe">
+            </div>
+            <div class="gallery-item wide">
+                <img src="images/hero.jpg" alt="Our space">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What our guests say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"The coffee here is hands down the best I've ever had. The homemade cakes are exceptional and the atmosphere is so inviting. A true must-visit in Reykjavik!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">KO</div>
+                        <div>
+                            <span class="author-name">Katrín Ólafsdóttir</span>
+                            <span class="author-role">Local Guide</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card featured">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Such a cozy and charming cafe. The food and drinks are absolutely delicious, and the staff makes you feel like family from the moment you arrive. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">BE</div>
+                        <div>
+                            <span class="author-name">Björn Einarsson</span>
+                            <span class="author-role">Regular Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"My go-to spot for a quick lunch and a great cup of coffee. The atmosphere is perfect for relaxing after a busy morning. I find myself coming back again and again."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AG</div>
+                        <div>
+                            <span class="author-name">Anna Guðmundsdóttir</span>
+                            <span class="author-role">Food Blogger</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Come say hello</h2>
+                    <p class="section-text">We're open every day and always happy to welcome new faces. Whether you're a local or just passing through Reykjavik, stop by and make yourself at home.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0Z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Address</span>
+                                <span class="contact-value">Mýrargata 26, 101 Reykjavik, Iceland</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Hours</span>
+                                <span class="contact-value">Monday – Sunday: 10:00 – 18:00</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+354 555 0123</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-images">
+                    <div class="contact-image-main">
+                        <img src="images/contact-1.png" alt="Blue Cafe entrance">
+                    </div>
+                    <div class="contact-image-map">
+                        <img src="images/contact-2.png" alt="Reykjavik streets">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-content">
+                    <a href="#home" class="footer-logo">
+                        <img src="images/logo.png" alt="Blue Cafe" class="footer-logo-img">
+                        <span>Blue Cafe</span>
+                    </a>
+                    <p class="footer-tagline">Everything is handmade!</p>
+                    <p class="footer-message">We can't wait to see you here! 💙</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">&copy; 2025 – 2026 Blue Cafe Reykjavik. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
